@@ -1,0 +1,38 @@
+body {
+    background: #F4D04E;
+    font-family: Figtree;
+}
+
+.card {
+    width: 384px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #111111;
+    box-shadow: 8px 8px 0px 0px #111111;
+}
+
+img {
+    /* max-width keeps image from breaking out of div and follows margins*/
+    max-width: 100%;
+    margin: 24px 24px 24px;
+    border-radius: 10px;
+}
+
+.content {
+    background-color: aqua;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.category {
+    height: 29px;
+    width: 82px;
+    background-color:#F4D04E;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.category p {
+    margin: 0px:
+}
