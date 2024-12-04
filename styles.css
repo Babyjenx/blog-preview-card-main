@@ -115,6 +115,11 @@ body {
     font-weight: 800;
 }
 
+.author:hover {
+  color: gainsboro;
+  cursor: pointer;
+}
+
 .user_pic {
   max-width: 32px;
   float: left;
