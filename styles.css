@@ -116,7 +116,7 @@ body {
 }
 
 .author:hover {
-  color: gainsboro;
+  opacity: 50%;
   cursor: pointer;
 }
 
