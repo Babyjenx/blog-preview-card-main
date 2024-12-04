@@ -1,7 +1,57 @@
+/* CSS Reset */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+ /* My CSS */ 
+
 body {
-    background: #F4D04E;
-    font-family: Figtree;
-}
+  background: #F4D04E;
+  font-family: Figtree;
+  display: flex;
+  justify-content: center; /* horizontally*/
+  align-items: center; /* vertically */
+  min-height: 100vh; /* Need this for vertical alignment */
+  }
+
 
 .card {
     width: 384px;
@@ -11,7 +61,7 @@ body {
     box-shadow: 8px 8px 0px 0px #111111;
 }
 
-img {
+.blog_image {
     /* max-width keeps image from breaking out of div and follows margins*/
     max-width: 100%;
     margin: 24px 24px 24px;
@@ -19,20 +69,54 @@ img {
 }
 
 .content {
-    background-color: aqua;
     margin-left: 24px;
     margin-right: 24px;
 }
 
 .category {
     height: 29px;
-    width: 82px;
+    max-width: 82px;
     background-color:#F4D04E;
     border-radius: 4px;
     font-size: 14px;
     font-weight: 700;
+    text-align: center;
+    padding: .23rem
 }
 
-.category p {
-    margin: 0px:
+.publish_date {
+    font-size: 14px;
+    font-weight: medium;
+    color: #111111;
+    margin: 12px 0px;
+}
+
+.title {
+    font-size: 24px;
+    margin: 12px 0px;
+}
+
+.title:hover {
+  color: #F4D04E;
+  cursor: pointer;
+}
+
+.description{
+    color: var(--color-gray-500, #6B6B6B);
+    font-size: 16px;
+}
+
+.author {
+    /* Margin top, right, bottom, left*/
+    margin: 24px 0px 24px 24px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.user_pic {
+  max-width: 32px;
+  float: left;
+  margin-right: 12px;
 }
